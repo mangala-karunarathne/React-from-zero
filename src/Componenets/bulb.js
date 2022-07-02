@@ -2,21 +2,21 @@ import React, { useState } from "react";
 
 function LightBulb() {
   let [light, setLight] = useState(0);
-  let [value, setValue] = useState(0);
+  let [value, setValue] = useState(0); 
 
-  const newValue = () => setValue(value + 100);
-  const setOff = () => setLight(0);
-  const setOn = () => setLight(1);
+  const newAge = () => setValue(value + 100);
+  const setOff = () => setLight(0); // 0 = off
+  const setOn = () => setLight(1); // 1 = on
 
-  let fillColor = light === 1 ? "#ffbb73" : "#000000";
+  let abc = light === 1 ? "#ffbb73" : "#000000"; // if else
 
   return (
     <div className="App">
       <div>
-        <LightbulbSvg fillColor={fillColor} />
+        <LightbulbSvg fillColor={abc} />
       </div>
       <div>{value}</div>
-      <button onClick={newValue}>Value</button>
+      <button onClick={newAge}>Age</button>
       <button onClick={setOff}>Off</button>
       <button onClick={setOn}>On</button>
     </div>
