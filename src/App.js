@@ -7,7 +7,9 @@ import EffectTutorial from './Hooks/useEffect/useEffect';
 import Component1 from './Hooks/useContext/PropDrilling/without-use-context';
 import Component1A from './Hooks/useContext/PropDrilling/with-use-context';
 import ContextTutorial from './Hooks/useContext/context';
+import styleMaster from './Componenets/style/c';
 import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
+import BasicButtons from './MaterialUI/basicbuttons'
 
 
 function App() {
@@ -25,6 +27,9 @@ function App() {
         <Route exact path='/propdrilling/without' element={<Component1/>}/>
         <Route exact path='/propdrilling/with' element={<Component1A/>}/>
         <Route exact path='/usercontext' element={<ContextTutorial/>}/>
+        <Route exact path='/stylemaster' element={<styleMaster/>}/>
+        <Route exact path='/basicbuttons' element={<BasicButtons/>}/>
+
       </Routes>
      
     </div>
