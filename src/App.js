@@ -10,6 +10,9 @@ import ContextTutorial from './Hooks/useContext/context';
 import styleMaster from './Componenets/style/c';
 import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import BasicButtons from './MaterialUI/basicbuttons'
+import BasicModal from './MaterialUI/modal';
+import SignupForm from './Login/Formic/formic';
+
 
 
 function App() {
@@ -29,7 +32,9 @@ function App() {
         <Route exact path='/usercontext' element={<ContextTutorial/>}/>
         <Route exact path='/stylemaster' element={<styleMaster/>}/>
         <Route exact path='/basicbuttons' element={<BasicButtons/>}/>
-
+        <Route exact path='/basicmodal' element={<BasicModal/>}/>
+        <Route exact path='/formik' element={<SignupForm/>}/>
+        
       </Routes>
      
     </div>
