@@ -12,6 +12,7 @@ import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import BasicButtons from './MaterialUI/basicbuttons'
 import BasicModal from './MaterialUI/modal';
 import SignupForm from './Login/Formic/formic';
+import ValidationSchemaExample from './Login/Formic/yupFormik';
 
 
 
@@ -34,7 +35,7 @@ function App() {
         <Route exact path='/basicbuttons' element={<BasicButtons/>}/>
         <Route exact path='/basicmodal' element={<BasicModal/>}/>
         <Route exact path='/formik' element={<SignupForm/>}/>
-        
+        <Route exact path='/yupformik' element={<ValidationSchemaExample/>}/>
       </Routes>
      
     </div>
