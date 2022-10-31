@@ -13,7 +13,7 @@ import BasicButtons from './MaterialUI/basicbuttons'
 import BasicModal from './MaterialUI/modal';
 import SignupForm from './Login/Formic/formic';
 import ValidationSchemaExample from './Login/Formic/yupFormik';
-
+import Pagination from './Componenets/Pagination/pagination';
 
 
 function App() {
@@ -36,6 +36,7 @@ function App() {
         <Route exact path='/basicmodal' element={<BasicModal/>}/>
         <Route exact path='/formik' element={<SignupForm/>}/>
         <Route exact path='/yupformik' element={<ValidationSchemaExample/>}/>
+        <Route exact path='/pagination' element={<Pagination/>}/>
       </Routes>
      
     </div>
