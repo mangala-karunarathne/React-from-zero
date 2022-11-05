@@ -10,14 +10,14 @@ import {
 
 export const MuiTable = () => {
     return (
-      <TableContainer component={Paper} sx={{ maxHeight: '450px' }} className="muiTable" >
+      <TableContainer style={{ width: "60%" }} component={Paper} sx={{ maxHeight: '450px' }} className="muiTable" >
       <Table aria-lable='simple table' stickyHeader>
           <TableHead>
                   <TableRow>
-                      <TableCell>Id</TableCell>
-                      <TableCell>First Name</TableCell>
-                      <TableCell>Last Name</TableCell>
-                      <TableCell align='center'>Email</TableCell>
+                      <TableCell >Id</TableCell>
+                      <TableCell style={{ width: "20%" }}>First Name</TableCell>
+                      <TableCell style={{ width: "20%" }}>Last Name</TableCell>
+                      <TableCell style={{ width: "40%" }}align='center' >Email</TableCell>
                   </TableRow>
           </TableHead> 
           <TableBody>
