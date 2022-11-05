@@ -14,6 +14,7 @@ import BasicModal from './MaterialUI/modal';
 import SignupForm from './Login/Formic/formic';
 import ValidationSchemaExample from './Login/Formic/yupFormik';
 import Pagination from './Componenets/Pagination/pagination';
+import { MuiTable } from './Componenets/MUI_Tables/MuiTable';
 
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
         <Route exact path='/formik' element={<SignupForm/>}/>
         <Route exact path='/yupformik' element={<ValidationSchemaExample/>}/>
         <Route exact path='/pagination' element={<Pagination/>}/>
+        <Route exact path='/muitable' element={<MuiTable/>}/>
       </Routes>
      
     </div>

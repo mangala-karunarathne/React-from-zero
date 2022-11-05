@@ -11,18 +11,32 @@ export const MuiTable = () => {
     return <TableContainer>
         <Table aria-lable='simple table'>
             <TableHead>
-                <TableBody>
                     <TableRow>
                         <TableCell>Id</TableCell>
                         <TableCell>First Name</TableCell>
                         <TableCell>Last Name</TableCell>
                         <TableCell>Email</TableCell>
                     </TableRow>
-                </TableBody>
-            </TableHead>
+            </TableHead> 
+            <TableBody>
+              {
+                tableData.map((row) => (
+                  <TableRow 
+                    key={row.id}
+                    // sx={{ '&:last-child td, &:last-child th': {border: 0} }}
+                    // to remove the border in last row
+                    >
+                      <TableCell>{row.id}</TableCell>
+                      <TableCell>{row.first_name}</TableCell>
+                      <TableCell>{row.last_name}</TableCell>
+                      <TableCell>{row.email}</TableCell>
+                  </TableRow>
+                ))
+              }
+            </TableBody>
         </Table>
     </TableContainer>
-}
+} 
 
 const tableData = [
 
