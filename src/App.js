@@ -15,6 +15,7 @@ import SignupForm from './Login/Formic/formic';
 import ValidationSchemaExample from './Login/Formic/yupFormik';
 import Pagination from './Componenets/Pagination/pagination';
 import { MuiTable } from './Componenets/MUI_Tables/MuiTable';
+import BasicTable from './Componenets/table/BasicTable';
 
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
         <Route exact path='/yupformik' element={<ValidationSchemaExample/>}/>
         <Route exact path='/pagination' element={<Pagination/>}/>
         <Route exact path='/muitable' element={<MuiTable/>}/>
+        <Route exact path='/basictable' element={<BasicTable/>}/>
       </Routes>
      
     </div>

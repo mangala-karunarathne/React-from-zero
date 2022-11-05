@@ -17,7 +17,7 @@ export const MuiTable = () => {
                       <TableCell >Id</TableCell>
                       <TableCell style={{ width: "20%" }}>First Name</TableCell>
                       <TableCell style={{ width: "20%" }}>Last Name</TableCell>
-                      <TableCell style={{ width: "40%" }}align='center' >Email</TableCell>
+                      <TableCell style={{ width: "50%" }}align='center' >Email</TableCell>
                   </TableRow>
           </TableHead> 
           <TableBody>
