@@ -5,37 +5,40 @@ import {
     TableBody,
     TableRow,
     TableCell,
-} from '@mui/material'
+    Paper,
+  } from '@mui/material'
 
 export const MuiTable = () => {
-    return <TableContainer>
-        <Table aria-lable='simple table'>
-            <TableHead>
-                    <TableRow>
-                        <TableCell>Id</TableCell>
-                        <TableCell>First Name</TableCell>
-                        <TableCell>Last Name</TableCell>
-                        <TableCell>Email</TableCell>
-                    </TableRow>
-            </TableHead> 
-            <TableBody>
-              {
-                tableData.map((row) => (
-                  <TableRow 
-                    key={row.id}
-                    // sx={{ '&:last-child td, &:last-child th': {border: 0} }}
-                    // to remove the border in last row
-                    >
-                      <TableCell>{row.id}</TableCell>
-                      <TableCell>{row.first_name}</TableCell>
-                      <TableCell>{row.last_name}</TableCell>
-                      <TableCell>{row.email}</TableCell>
+    return (
+      <TableContainer component={Paper} sx={{ maxHeight: '450px' }} className="muiTable" >
+      <Table aria-lable='simple table' stickyHeader>
+          <TableHead>
+                  <TableRow>
+                      <TableCell>Id</TableCell>
+                      <TableCell>First Name</TableCell>
+                      <TableCell>Last Name</TableCell>
+                      <TableCell align='center'>Email</TableCell>
                   </TableRow>
-                ))
-              }
-            </TableBody>
-        </Table>
-    </TableContainer>
+          </TableHead> 
+          <TableBody>
+            {
+              tableData.map((row) => (
+                <TableRow 
+                  key={row.id}
+                  // sx={{ '&:last-child td, &:last-child th': {border: 0} }}
+                  // to remove the border in last row
+                  >
+                    <TableCell>{row.id}</TableCell>
+                    <TableCell>{row.first_name}</TableCell>
+                    <TableCell>{row.last_name}</TableCell>
+                    <TableCell align='center'>{row.email}</TableCell>
+                </TableRow>
+              ))
+            }
+          </TableBody>
+      </Table>
+      </TableContainer>
+    )
 } 
 
 const tableData = [
